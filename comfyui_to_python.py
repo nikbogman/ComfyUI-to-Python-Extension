@@ -40,7 +40,7 @@ class FileHandler:
         """
 
         try:
-            with open(file_path, 'r') as file:
+            with open(file_path, 'rb') as file:
                 data = json.load(file)
             return data
 
